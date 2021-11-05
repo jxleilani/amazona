@@ -1,6 +1,5 @@
 const data = {
   products: [
-    ,
     {
       _id: '1',
       name: 'Nike Slim Shirt',
@@ -69,3 +68,4 @@ const data = {
     }
   ]
 }
+export default data;
