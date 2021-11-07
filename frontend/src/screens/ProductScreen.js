@@ -7,8 +7,6 @@ import data from "../data";
 function ProductScreen() {
   const params = useParams();
   const product = data.products.find((p) => p._id === params.id);
-  console.log(params, product);
-
   if (!product) return <div>Product Not Found</div>;
 
   return (
