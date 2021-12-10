@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CartScreen from "./screens/CartScreen";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 
@@ -25,6 +26,9 @@ function App() {
             </Router>
             <Route path='/product/:id'>
               <ProductScreen />
+            </Route>
+            <Route path='/cart/:id?'>
+              <CartScreen />
             </Route>
           </Switch>
         </main>
