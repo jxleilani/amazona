@@ -101,6 +101,10 @@ a.brand {
   font-size: 3rem;
   font-weight: bold;
 }
+.badge {
+  background-color: #f02020;
+  color: #ffff
+}
 .row {
   display: flex;
   flex-wrap: wrap;
