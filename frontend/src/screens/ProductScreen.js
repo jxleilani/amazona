@@ -29,15 +29,15 @@ function ProductScreen(props) {
       {loading ? (
         <LoadingBox />
       ) : error ? (
-        <MessageBox variant='danger'>{error}</MessageBox>
+        <MessageBox variant="danger">{error}</MessageBox>
       ) : (
         <div>
-          <Link to='/'>Back to result</Link>
-          <div className='row top'>
-            <div className='col-2'>
-              <img className='large' src={product.image} alt={product.name} />
+          <Link to="/">Back to result</Link>
+          <div className="row top">
+            <div className="col-2">
+              <img className="large" src={product.image} alt={product.name} />
             </div>
-            <div className='col-1'>
+            <div className="col-1">
               <ul>
                 <li>
                   <h1>{product.name}</h1>
@@ -55,23 +55,23 @@ function ProductScreen(props) {
                 </li>
               </ul>
             </div>
-            <div className='col-1'>
-              <div className='card card-body'>
+            <div className="col-1">
+              <div className="card card-body">
                 <ul>
                   <li>
-                    <div className='row'>
+                    <div className="row">
                       <div>Price</div>
-                      <div className='price'>{`$${product.price}`}</div>
+                      <div className="price">{`$${product.price}`}</div>
                     </div>
                   </li>
                   <li>
-                    <div className='row'>
+                    <div className="row">
                       <div>Status&nbsp;</div>
                       <div>
                         {product.countInStock > 0 ? (
-                          <span className='success'>In Stock</span>
+                          <span className="success">In Stock</span>
                         ) : (
-                          <span className='danger'>Unavailable</span>
+                          <span className="danger">Unavailable</span>
                         )}
                       </div>
                     </div>
@@ -79,7 +79,7 @@ function ProductScreen(props) {
                   {product.countInStock > 0 && (
                     <>
                       <li>
-                        <div className='row'>
+                        <div className="row">
                           <div>Qty</div>
                           <div>
                             <select
@@ -100,7 +100,7 @@ function ProductScreen(props) {
                       <li>
                         <button
                           onClick={addToCartHandler}
-                          className='primary block'
+                          className="primary block"
                         >
                           Add to Cart
                         </button>
